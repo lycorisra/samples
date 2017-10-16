@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>lycorisra</title>
+	<meta name="description" content="Description">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="lib/css/vue.css">
+	<link rel="stylesheet" href="lib/css/vuep.css">
+</head>
+
+<body>
+	<div id="main">加载中</div>
+
+	<script>
+		window.$docsify = {
+			el: '#main',
+			basePath: 'pages/',
+			name: '我的随笔',// 文档标题，会显示在侧边栏顶部。
+			repo: 'lycorisra',
+			themeColor: '#3F51B5',//替换主题色。利用 CSS3 支持变量的特性，对于老的浏览器有 polyfill 处理。
+			auto2top: true, //切换页面后是否自动跳转到页面顶部。
+			coverpage: false,
+			loadNavbar: true,
+			loadSidebar: true,
+			mergeNavbar: true,//小屏设备下合并导航栏到侧边栏
+			autoHeader: false,//同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题
+			subMaxLevel: 1
+		}
+
+	</script>
+	<script src="lib/sea.min.js"></script>
+	<script src="lib/vue.min.js"></script>
+	<script src="lib/vuep.min.js"></script>
+	<script src="lib/docsify.min.js"></script>
+	<script src="lib/external-script.js"></script>
+
+	<script>
+		// seajs 的简单配置
+		seajs.config({
+			alias: {
+				'jquery': './lib/jquery.min.js',
+				'component': './src/js/components/select/component.js',
+				'CasecadeSelector': './src/js/CasecadeSelector.js'
+			}
+		})
+
+	</script>
+</body>
+
+</html>

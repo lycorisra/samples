@@ -1,0 +1,107 @@
+body {
+    font: 12px/1.5 Tahoma, Arial, "微软雅黑", sans-serif;
+    color:#fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    position: relative;
+    width:100%;
+    height:200px;
+    margin:50px auto;
+    background-color:#222;
+}
+.times {
+    height: 50px;
+}
+p.timeline {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    right: 0;
+    border-top: 2px dotted #FFCC00;
+}
+ul.justify{
+	padding-left:0;
+}
+.justify {
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    font-size: 0;
+    /*text-align-last: justify;*/ /*这一句能实现多列均匀布局效果，但不兼容IE*/
+    /*border-bottom: 2px dotted #FFCC00;*/
+}
+        .justify:after {
+            content: '';
+        }
+
+    .justify:after{
+        display: inline-block;
+        position: relative;
+        height: 1px;
+        top: -10px;
+        width: 100%;
+    }
+    .justify i, .justify li {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        color: #E9F5C8;
+        font-size: 18px;
+        overflow: hidden;
+        font-style: normal;
+    }
+    .justify i {
+        width:10%;
+        height: 45px;
+    }
+    .justify i:hover {
+        color:#EA8010;
+    }
+        .justify i:before {
+            content: '●';
+            position: absolute;
+            left: 41%;
+            bottom: 0px;
+            font-weight: bold;
+        }
+.issues li {
+    font-size: 12px;
+    color: #fff;
+    width: 10%;
+    height: 135px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+    .issues li.details {
+        border: 1px solid #ddd;
+        transform: rotate(45deg);
+    }
+.issues li h5 {
+    font-size: 15px;
+    text-align: left;
+    color: burlywood;
+}
+.line {
+    width: 0;
+    height: 100%;
+    background-color: #ddd;
+    position: absolute;
+    top: -20px;
+    left: 85px;
+    border-left: 1px solid #ddd;
+}
+li div:before {
+    content: '';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border: 8px solid #ddd;
+    border-color: transparent transparent #fff transparent;
+    /* position: absolute; */
+    /* top: -16px; */
+}

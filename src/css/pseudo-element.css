@@ -1,0 +1,23 @@
+.demo01 {
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+	border: 1px solid #ddd;
+	
+    text-align: justify;
+}
+.demo01:after {
+	content:'';
+	display: inline-block;
+    width: 100%;
+}
+.demo01 i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+	font-size: 18px;
+	vertical-align: middle;
+    background-color: chocolate;
+}
